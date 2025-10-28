@@ -71,7 +71,7 @@ const Hero = () => {
                 View LinkedIn
               </a>
               <a
-                href="/assets/resume.pdf"
+                href="/resume.pdf"
                 download
                 className="px-8 py-3 bg-secondary text-secondary-foreground font-semibold 
                          rounded-lg hover:bg-secondary/80 transition-all hover:scale-105 
