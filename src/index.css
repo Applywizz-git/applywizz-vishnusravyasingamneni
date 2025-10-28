@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Cinematic Portfolio Colors - Deep Slate, Platinum, Amber, Off White */
+    --background: 30 33% 97%; /* Off White #F8F6F3 */
+    --foreground: 0 0% 10%; /* Deep Slate #1A1A1A */
+
+    --card: 30 33% 97%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 30 33% 97%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 10%; /* Deep Slate */
+    --primary-foreground: 30 33% 97%; /* Off White */
+
+    --secondary: 30 20% 82%; /* Warm Platinum #DAD2C7 */
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 30 20% 82%;
+    --muted-foreground: 0 0% 35%;
+
+    --accent: 35 45% 57%; /* Soft Amber #C59B5F */
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 30 33% 97%;
+
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 35 45% 57%;
+
+    --radius: 1rem;
+
+    /* Emerald accent for profile */
+    --emerald: 160 84% 39%;
+    --emerald-light: 160 84% 89%;
+
+    /* Gradient overlays */
+    --gradient-start: 0 0% 10%;
+    --gradient-end: 35 45% 57%;
+  }
+
+  .dark {
+    --background: 0 0% 10%; /* Deep Slate */
+    --foreground: 30 33% 97%; /* Off White */
+
+    --card: 0 0% 12%;
+    --card-foreground: 30 33% 97%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 30 33% 97%;
+
+    --primary: 30 33% 97%; /* Off White */
+    --primary-foreground: 0 0% 10%; /* Deep Slate */
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 30 20% 82%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 30 20% 70%;
+
+    --accent: 35 45% 57%; /* Soft Amber */
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 62.8% 40.6%;
+    --destructive-foreground: 30 33% 97%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 35 45% 57%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
