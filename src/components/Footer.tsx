@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
+import {  Linkedin, Mail, ArrowUp } from "lucide-react";
 import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
@@ -13,11 +13,11 @@ const Footer = () => {
       url: "https://linkedin.com/in/sravya-singamneni-390223105",
       label: "LinkedIn",
     },
-    {
-      icon: Github,
-      url: "https://github.com/vishnusravya",
-      label: "GitHub",
-    },
+    // {
+    //   icon: Github,
+    //   url: "https://github.com/vishnusravya",
+    //   label: "GitHub",
+    // },
     {
       icon: Mail,
       url: "mailto:ssingamnei97@gmail.com",
